@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Roboto:100,200,300,400&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.sidebar {
+  width: 20%;
+  height: 101vh;
+  position: fixed;
+  float: left;
+  z-index: 50;
+
+  background-color: white;
+}
+
+.logo {
+  margin: 0;
+  padding: 50px 10px 0;
+}
+
+.logo h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.sidebar nav ul {
+  padding: 0;
+  margin: 0;
+  padding-top: 80px;
+
+  list-style-type: none;
+  text-align: center;
+}
+
+.sidebar nav ul li{
+  padding: 8px 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+
+  font-size: 1.1rem;
+}
+
+.active-page {
+  border-bottom: 3px solid black;
+}
+
+.side-footer h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: center;
+
+  margin: 70% 0 5% 0;
+}
+
+.side-footer ul {
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+  text-align: center;
+}
+
+.side-footer ul li {
+  display: inline-block;
+  margin: 0 10px;
+  padding-top: 0.3rem;
+
+  background: #eaeaea;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.sidebar a {
+  color: black;
+}
+
+.sidebar nav a:hover {
+  text-decoration: none;
+  border-bottom: 3px solid #9BAFB5;
+}
+
+.home-image-gallery {
+  margin-left: 20%;
+}
+
+.landing-image {
+  height: 100vh;
+  background-color: #9BAFB5;
+}
+
+#banner {
+  margin-left: 20%;
+  padding: 0;
+  width: 80%;
+}
+
+.scroll-down {
+  height: 0px;
+}
+
+.scroll-down a {
+  color: white;
+  text-decoration: none;
+}
+
+  .scroll-down .scroll-icon {
+    position: absolute;
+    text-align: center;
+    top: 82vh;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-left: 20%;
+    z-index: 100;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    animation: bounce 0.5s cubic-bezier(.5,0.05,1,.5);
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+  }
+
+@keyframes bounce {
+  from { transform: translate3d(0, 0, 0);     }
+  to   { transform: translate3d(0, -10px, 0); }
+}
+
+@keyframes bounce-hover {
+  from { transform: translate3d(0, 0, 0);     }
+  to   { transform: translate3d(0, -6px, 0); }
+}
+
+.mouseover:hover {
+  animation: bounce-hover 0.5s cubic-bezier(.5,0.05,1,.5);
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.drone:hover .drone-text {
+  animation: bounce-hover 0.5s cubic-bezier(.5,0.05,1,.5);
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+}
+
+.photography:hover .photo-text {
+  animation: bounce-hover 0.5s cubic-bezier(.5,0.05,1,.5);
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+}
+
+#about-me {
+  width: 80%;
+  height: 100vh;
+  margin-left: 20%;
+  padding-bottom: 100px;
+  background: #303030;
+  text-align: center;
+}
+
+  #about-me .profile-pic {
+    width: 160px;
+    margin: 30px 0;
+  }
+
+  #about-me .profile-title {
+    text-align: center;
+  }
+
+  #about-me h4 {
+    color: white;
+    padding: 10px;
+    margin: 0;
+    padding-top: 20px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  #about-me .about-me-description {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 30px;
+  }
+
+  #about-me .about-me-description p {
+    color: white;
+    padding: 10px;
+    font-weight: 300;
+    margin: 0;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+
+  #about-me .about-me-description .passions {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #dfe6e9;
+    margin: 10px 0;
+  }
+
+    #about-me .about-me-description .passions p {
+      text-align: center;
+      font-weight: 600;
+      font-size: 19px;
+      color: black;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    #about-me .about-me-description .passions .col-xl-2 {
+      padding: 0;
+    }
+
+      #about-me .about-me-description .passions .col-xl-2 p {
+        font-size: 50px;
+        color: #9CAFB6;
+      }
+
+  #about-me .about-me-columns {
+    width: 90%;
+    margin-left: 5%;
+    z-index: 500;
+  }
+
+  #about-me .about-me-columns .about-me-section {
+    background: white;
+    color: black;
+    border: 1px solid #dfe6e9;
+  }
+
+    #about-me .about-me-columns .about-me-section:first-child {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-right: 0px;
+    }
+
+    #about-me .about-me-columns .about-me-section:last-child {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-left: 0px;
+    }
+
+  #about-me .about-me-columns .about-me-section i {
+    margin: 30px 0;
+    color: #9CAFB6;
+  }
+
+  #about-me .about-me-columns .about-me-section h3 {
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  #about-me .about-me-columns .about-me-section .align-center {
+    margin-top: 78px;
+  }
+
+  #about-me .about-me-columns .about-me-section .about-me-list ul {
+    list-style-type: none;
+    margin: 50px 0;
+    padding: 0;
+  }
+
+    #about-me .about-me-columns .about-me-section .about-me-list ul li {
+      list-style-type: none;
+      margin: 5px 0;
+      padding: 0;
+    }
+
+.osu-logo {
+  text-align: center;
+  height: 80px;
+  width: auto;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.see-more {
+  height: 30vh;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+  .see-more .learnmore {
+    margin: auto;
+    text-align: center;
+    height: 140px;
+    width: auto;
+    margin-top: 50px;
+  }
+
+  .see-more .learnmore:hover {
+    animation: bounce-hover 0.5s cubic-bezier(.5,0.05,1,.5);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+
+/* Footer */
+footer {
+  width: 80%;
+  margin-left: 20%;
+  background-color: #dfe6e9;
+  border-top: 1px solid white;
+}
+
+  footer .copyright {
+    padding: 40px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+  }
+
+    footer .copyright p {
+      padding: 0;
+      margin: 0;
+      color: #2d3436;
+      font-weight: 300;
+    }
+
+    footer .copyright h5 {
+      color: white;
+      padding: 10px;
+      margin: 0;
+      padding-top: 20px;
+      font-size: 22px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+  footer a {
+    color: #f74d4d;
+  }
+
+    footer a:hover {
+      color: #f74d4d;
+    }
+
+.home-footer {
+  margin-top: 20px;
+  background-color: #dfe6e9;
+  border-top: 1px solid white;
+}
+
+  .home-footer .copyright {
+    padding: 40px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+  }
+
+  .home-footer .copyright p {
+    padding: 0;
+    margin: 0;
+    color: #2d3436;
+    font-weight: 300;
+  }
+
+  .home-footer .copyright h5 {
+    color: white;
+    padding: 10px;
+    margin: 0;
+    padding-top: 20px;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+/* Titles */
+
+.title-bar {
+  background-color: #f8f9fa;
+  margin-left: 20%;
+  height: 21vh;
+  display: flex;
+  align-items: flex-end;
+}
+
+  .title-bar .title {
+    padding: 0 0 5px 15px;
+    margin: 0;
+  }
+
+    .title-bar .title a h4 {
+      font-family: 'Poppins', sans-serif;
+      color: black;
+      font-size: 20px;
+      border-bottom: 2px solid black;
+      display: inline-block;
+    }
+
+    .title-bar .title a:hover {
+      text-decoration: none;
+    }
+
+    .title-bar .title h2 {
+      font-family: 'Poppins', sans-serif;
+      padding: 0;
+      margin: 0;
+      font-size: 40px;
+      font-weight: 600;
+    }
+
+    .title-bar .title i {
+      color: black;
+      display: inline-block;
+      padding-right: 7px;
+      font-size: 20px;
+    }
+
+/* Tool Pages */
+
+.main {
+  margin-left: 20%;
+  padding: 10px;
+}
+
+.main h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 23px;
+  color: black;
+
+  margin-top: 15px;
+}
+
+.tool-image {
+  text-align: center;
+}
+
+.tool-image img {
+  width: 80%;
+  height: auto;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.tool-image .desktop {
+  height: 350px;
+  width: auto;
+  margin-left: 50px;
+}
+
+.tool-image .mobile {
+  height: 350px;
+  width: auto;
+}
+
+.tool-image .mobile-duel {
+  height: 350px;
+  width: auto;
+  margin-right: 50px;
+}
+
+.image-caption {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #303030;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.gallery-tile {
+  opacity: 0.8;
+  /* border: 0.5px solid #dfe6e9; */
+}
+
+  .gallery-tile:hover {
+    opacity: 1;
+  }
+
+.text-tile {
+  background: #9BAFB5;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 0 20px;
+}
+
+.home-image-gallery img {
+  width: 100%;
+}
+
+.web-link {
+  text-align: center;
+  margin: 40px 0 40px 35%;
+  padding: 10px;
+  width: 300px;
+}
+
+.web-link h3 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.disclaimer {
+  font-size: 18px;
+  font-weight: 400;
+  border: 3px solid #9BAFB5;
+  border-radius: 3px;
+  text-align: center;
+  padding: 5px 0;
+  margin: 30px 180px;
+}
+
+#website-button {
+  background-color: #9BAFB5;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 23px;
+  font-weight: 400;
+  padding: 5px 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 44em) {
+  .mobile-hide {
+    display: none;
+    width: 70%;
+  }
+
+  #banner {
+    margin: 0;
+    width: 100%;
+  }
+
+  .scroll-icon {
+    margin: 0;
+  }
+
+  #about-me h4 {
+    text-align: center;
+  }
+
+  #about-me {
+    margin: 0;
+    width: 100%;
+  }
+
+  .profile-pic {
+    margin-left: 30%;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    z-index: 200;
+  }
+
+  .description p, .description h4 {
+    text-align: center;
+  }
+
+  .contact {
+    display: block;
+  }
+
+  .copyright {
+    display: none;
+  }
+
+  .title-bar {
+    margin: 0;
+  }
+
+  .gallery {
+    margin: 0;
+  }
+
+  .home-image-gallery {
+    margin: 0;
+  }
+
+  .pricing {
+    margin: 0;
+  }
+
+  footer {
+    margin: 0;
+    height: 550px;
+  }
+
+  .contact {
+    margin-top: 25px;
+  }
+}
